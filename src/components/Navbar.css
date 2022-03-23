@@ -1,0 +1,20 @@
+ul {
+    list-style: none;  
+    background-color: #00AFB5;
+}
+
+li { 
+    background: #00AFB5;
+    display: inline-block;
+    margin: 10px;
+    color: rgb(107, 19, 19);
+
+}
+
+.navlink { 
+    text-decoration: rgb(0, 0, 0);
+    color:rgb(255, 255, 255) ;
+}
+img{
+    height: 60px;
+}
