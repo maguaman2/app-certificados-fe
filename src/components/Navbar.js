@@ -16,6 +16,13 @@ export default function Navbar() {
                    
                      
                 </NavLink>
+                <br></br>
+                <NavLink to={"/subircertificado"} className="navlink">
+                 
+                 subirCertificado
+                   
+                     
+                </NavLink>
 
 </li>
 </ul>

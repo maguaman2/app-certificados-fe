@@ -19,11 +19,11 @@ const getCertificadoById = async (id) => {
     return  data;
 }
 
-const createCertificado = async (teacher) => {
-
-    const resp = await fetch(`${urlCrud}/teachers`, {
+const createCertificado = async (certificado) => {
+    console.log(certificado);
+    const resp = await fetch(`${urlCrud}/certificado/`, {
         method: 'POST',
-        body: JSON.stringify(teacher),
+        body: JSON.stringify(certificado),
         headers: {
             'Content-type': 'application/json'
         }
