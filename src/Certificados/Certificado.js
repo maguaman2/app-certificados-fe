@@ -12,6 +12,7 @@ return(
         <td> {props.itemTeacher.nombres} </td>
         <td> {props.itemTeacher.curso} </td>
         <td><Link to={`/detalle/${props.itemTeacher.id}`}>Detalle</Link> </td>
+        
     </tr>
     
       

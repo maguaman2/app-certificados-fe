@@ -5,6 +5,7 @@ import CertificadoPage from './Certificados/CertificadoPage';
 import Navbar from "./components/Navbar";
 import Detalle from './Detalle/Detalle';
 import SubirCertificado from "./Certificados/SubirCertificado";
+import CertificadoUpdate from "./update/CertificadoUpdate";
 function App () {
 
   return (
@@ -15,6 +16,7 @@ function App () {
         <Route path="/certificados" element={<CertificadoPage />} />
       <Route path="/detalle/:certificadoId" element={<Detalle />} />
      <Route path="/subircertificado" element={<SubirCertificado/>}/>
+     <Route path="/certificadoupdate" element={<CertificadoUpdate/>}/>
       </Routes>
     </BrowserRouter>   
   );

@@ -32,9 +32,9 @@ const createCertificado = async (certificado) => {
 }
 
 
-const updateTeacher = async (teacher) => {
+const updateCertificado = async (teacher) => {
   
-    const resp = await fetch(`${urlCrud}/teachers`, {
+    const resp = await fetch(`${urlCrud}/certificado`, {
         method: 'PUT',
         body: JSON.stringify(teacher),
         headers: {
@@ -47,7 +47,7 @@ const updateTeacher = async (teacher) => {
 export {
     getListCertificados,
     createCertificado,
-    updateTeacher,
+    updateCertificado,
     searchCertificado,
     getCertificadoById
 }
