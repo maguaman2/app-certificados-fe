@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import CertificadoList from './CertificadoList';
-import Certificado from './Certificado'
+import CertificadoView from './CertificadoView'
 import { getListCertificados,searchCertificado } from '../service/CertificadoService'
+import CertificadoListUpdate from "./CertificadoListUpdate";
 //import axios from "axios";
 
-function CertificadoPage() {
+function CertificadoPageUpdate() {
 
   const [teachers, setTeachers] = useState([]);
   const [cedula, setCedula] = useState("");
@@ -28,7 +28,7 @@ function CertificadoPage() {
 
   return (
     <div>
-      <h2>Certificados</h2>
+      <h2>Editar Certificados</h2>
 
 
        <form  onSubmit={onSubmit}  className="busqueda">
@@ -44,19 +44,19 @@ function CertificadoPage() {
     <input   type="submit" value="Buscar"/>
 </form>
      
-      <CertificadoList>
+      <CertificadoListUpdate>
         {
           teachers.map(item =>
-            <Certificado
+            <CertificadoView
               key={item.id}
               itemTeacher={item} />
           )
         }
-      </CertificadoList>
+      </CertificadoListUpdate>
     </div>
   );
 
  
 }
 
-export default CertificadoPage;
+export default CertificadoPageUpdate;

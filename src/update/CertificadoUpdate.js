@@ -1,46 +1,58 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Certificado from "../Certificados/Certificado";
-import { updateCertificado } from '../service/CertificadoService'
+import { updateCertificado,getCertificadoById } from '../service/CertificadoService'
 import './Certificado.css'
 
-function TeachersPage() {
+function CertificadoUpdate() {
   
   const { certificadoId } = useParams();
-  const [certificado] = useState({nombres:'',apellidos:'',correo:''});
+  const [certificado,setCertificado] = useState({
+    cedula:'',
+    nombres:'',
+    email:'',
+    fechas:'',
+    rol:'',
+    capacitador:'',
+    codigo:'',
+    area:'',
+    curso:'',
+    objetivo:'',
+    contenidos:'',
+
+  });
 
   const onSubmit = (event) => {
     event.preventDefault();
-    updateCertificado(certificadoId);
+    updateCertificado(certificado);
   }
   const onChange = (event) =>{
     if(event.target.name==='cedula')
-      setTeacher({...teacher,nombres:event.target.value})    
+      setCertificado({...certificado,cedula:event.target.value})    
     if(event.target.name==='nombres')    
-      setTeacher({...teacher,apellidos:event.target.value})
+      setCertificado({...certificado,nombres:event.target.value})
     if(event.target.name==='email')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,email:event.target.value})
     if(event.target.name==='fechas')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,fechas:event.target.value})
     if(event.target.name==='rol')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,rol:event.target.value})
     if(event.target.name==='capacitador')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,capacitador:event.target.value})
     if(event.target.name==='codigo')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,codigo:event.target.value})
     if(event.target.name==='area')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,area:event.target.value})
     if(event.target.name==='curso')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,curso:event.target.value})
     if(event.target.name==='objetivo')
-      setTeacher({...teacher,correo:event.target.value})
+      setCertificado({...certificado,objetivo:event.target.value})
     if(event.target.name==='contenidos')
-      setTeacher({...teacher,correo:event.target.value})      
+      setCertificado({...certificado,contenidos:event.target.value})      
   }
 
   useEffect(() => {    
-    findByIdTeacher(certificadoId).then(data => {
-      setTeacher(data);  
+    getCertificadoById(certificadoId).then(data => {
+      setCertificado(data);  
     }
     );
   }, [certificadoId]);
@@ -52,7 +64,7 @@ function TeachersPage() {
   
           <input 
           className="formUpdateInput"
-            name="Cedula"
+            name="cedula"
             placeholder="cedula" 
             value={certificado.cedula}
             onChange={onChange}
@@ -126,7 +138,7 @@ function TeachersPage() {
             <input 
            className="formUpdateInput"
            placeholder="Objetivo"
-            name="Objetivo"
+            name="objetivo"
             value={certificado.objetivo}
             onChange={onChange}
           />
@@ -150,4 +162,4 @@ function TeachersPage() {
   );
 }
 
-export default CertificadoPage;
+export default CertificadoUpdate;

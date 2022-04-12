@@ -5,9 +5,9 @@ export default function Navbar() {
     return (
       
 
-<ul class="nav nav-tabs">
-<li class="nav-item">
-<a class="navbar-brand" >
+<ul className="nav nav-tabs">
+<li className="nav-item">
+<a className="navbar-brand" >
       <img src="suda.png" alt="" />
     </a>
 <NavLink to={"/certificados"} className="navlink">
@@ -23,6 +23,13 @@ export default function Navbar() {
                    
                      
                 </NavLink>
+                <NavLink to={"/certificadopageupdate"} className="navlink">
+                 
+                 Actulizar 
+                   
+                     
+                </NavLink>
+
 
 </li>
 </ul>

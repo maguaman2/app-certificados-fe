@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-function CertificadoList(props){
+function CertificadoListUpdate(props){
 return(
     <table>
     <thead >
@@ -10,8 +10,8 @@ return(
         <th>Cedula</th>
         <th>Nombres</th>
         <th>Curso</th>
-        <th>Detalle</th>
-        <td><Link to={`/certificadoupdate/${props.itemTeacher.id}`}>Editar</Link></td>
+        <th>Editar</th>
+      
         
 
       </tr>
@@ -25,4 +25,4 @@ return(
 );
 }
 
-export default CertificadoList
+export default CertificadoListUpdate

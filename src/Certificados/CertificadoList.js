@@ -11,7 +11,7 @@ return(
         <th>Nombres</th>
         <th>Curso</th>
         <th>Detalle</th>
-        <td><Link to={`/certificadoupdate/${props.itemTeacher.id}`}>Editar</Link></td>
+        
         
 
       </tr>
