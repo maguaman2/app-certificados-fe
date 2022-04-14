@@ -32,7 +32,7 @@ return(
          
   <a class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Cedula</h5>
+      <h5 class="mb-1">Cédula</h5>
       
     </div>
     <p> {certificado.cedula} </p> 
@@ -75,14 +75,14 @@ return(
   </a>
   <a  class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Codigo</h5>
+      <h5 class="mb-1">Código </h5>
     </div>
       <p> {certificado.codigo} </p>
     
   </a>
   <a  class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Area</h5>
+      <h5 class="mb-1">Área </h5>
     </div>
       <p> {certificado.area} </p>
     

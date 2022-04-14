@@ -48,8 +48,8 @@ function SubirCertificado() {
   const headerKeys = Object.keys(Object.assign({}, ...array));
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1>REACTJS CSV IMPORT EXAMPLE </h1>
+    <div style={{ textAlign: "center" }} class="subir">
+      <h1>Subir Certificados </h1>
       <form>
         <input
           type={"file"}
@@ -63,7 +63,7 @@ function SubirCertificado() {
             handleOnSubmit(e);
           }}
         >
-          IMPORT CSV
+          IMPORTAR
         </button>
       </form>
 

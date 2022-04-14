@@ -27,8 +27,8 @@ function CertificadoPageUpdate() {
   }
 
   return (
-    <div>
-      <h2>Editar Certificados</h2>
+    <div  style={{ textAlign: "center" }}>
+      <h2 className="h2">Editar Certificados</h2>
 
 
        <form  onSubmit={onSubmit}  className="busqueda">

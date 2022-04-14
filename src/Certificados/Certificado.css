@@ -113,3 +113,12 @@ h2{
 .input{
     margin-left: 100px;
 }
+.subir{
+    border: solid;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+.centrar{
+    text-align: -webkit-center;
+}

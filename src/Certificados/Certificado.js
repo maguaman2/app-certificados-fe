@@ -1,12 +1,14 @@
 
 import './Certificado.css'
 import { Link } from "react-router-dom";
-import axios from 'axios';
+
 
 function Certificado(props){
    
 return(
-    <tr > 
+    
+    <tr  > 
+        
         <td>{props.itemTeacher.id}</td>   
         <td> {props.itemTeacher.cedula} </td>     
         <td> {props.itemTeacher.nombres} </td>
@@ -20,9 +22,4 @@ return(
 
 }
 export default Certificado
-  //  <div>
-  // <input type="file" name='files' multiple onChange={()=>subirArchivos(e.target.files)}/>
-     //   <button>
-     //       insertar archivos
-     //   </button>
-      //      </div>
+  

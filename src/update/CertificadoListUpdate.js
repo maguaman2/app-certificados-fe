@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 function CertificadoListUpdate(props){
 return(
+  <div className="centrar">
+
     <table>
     <thead >
       <tr>
@@ -22,6 +24,7 @@ return(
     
         </tbody>
   </table>
+  </div>
 );
 }
 

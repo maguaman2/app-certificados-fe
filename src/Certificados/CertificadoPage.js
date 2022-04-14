@@ -27,8 +27,8 @@ function CertificadoPage() {
   }
 
   return (
-    <div>
-      <h2>Certificados</h2>
+    <div style={{ textAlign: "center" }}>
+      <h2 >Certificados</h2>
 
 
        <form  onSubmit={onSubmit}  className="busqueda">

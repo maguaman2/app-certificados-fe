@@ -58,9 +58,9 @@ function CertificadoUpdate() {
   }, [certificadoId]);
 
   return (
-    <div className="boxUpdate">
+    <div  className="boxUpdate" >
       <form onSubmit={onSubmit} className="boxFormUpdate">
-      <h2>Actulizar profesor</h2>
+      <h2>Actualizar Certificado</h2>
   
           <input 
           className="formUpdateInput"
@@ -154,7 +154,7 @@ function CertificadoUpdate() {
 
         
 
-        <button type="submit" className="formUpdateBtn">Guardar</button>
+        <button type="submit" class="btn btn-success" className="formUpdateBtn">Guardar</button>
 
       </form>
       

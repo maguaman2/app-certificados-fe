@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 function CertificadoList(props){
 return(
-    <table>
+    <div className="centrar">
+
+
+    <table  >
     <thead >
-      <tr>
+      <tr >
         <th >Id</th>
         <th>Cedula</th>
         <th>Nombres</th>
         <th>Curso</th>
         <th>Detalle</th>
-        
-        
-
       </tr>
     </thead>
     <tbody>
@@ -22,6 +22,7 @@ return(
     
         </tbody>
   </table>
+    </div>
 );
 }
 

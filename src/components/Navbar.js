@@ -3,36 +3,37 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
 
     return (
-      
 
-<ul className="nav nav-tabs">
-<li className="nav-item">
-<a className="navbar-brand" >
-      <img src="suda.png" alt="" />
+<nav  class="navbar navbar-expand-lg navbar-light bg-light, li">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="/certificados">
+      <img src="suda.png"  height="60px"></img>
     </a>
-<NavLink to={"/certificados"} className="navlink">
-                 
-                 Certificados
-                   
-                     
-                </NavLink>
-                <br></br>
-                <NavLink to={"/subircertificado"} className="navlink">
-                 
-                 subirCertificado
-                   
-                     
-                </NavLink>
-                <NavLink to={"/certificadopageupdate"} className="navlink">
-                 
-                 Actulizar 
-                   
-                     
-                </NavLink>
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">  </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/certificados">Certificados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/subircertificado">Subir Certificados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/certificadopageupdate">Editar Certificado</a>
+        </li>
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
 
 
-</li>
-</ul>
+
+
     );
 
 }
