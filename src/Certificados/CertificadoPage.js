@@ -27,12 +27,13 @@ function CertificadoPage() {
   }
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <h2 >Certificados</h2>
+    <div  style={{ marginLeft: "center" }}>
+      <h2 >CERTIFICADOS</h2>
+      <div className="fnd">
 
+       <form  style={{ marginLeft: "70px" }} onSubmit={onSubmit}  className="busqueda">
 
-       <form  onSubmit={onSubmit}  className="busqueda">
-     <label htmlFor="text-search" > </label>
+     <label className="margin" htmlFor="text-search" > </label>
       <input 
        id="text-search"
        placeholder="Busqueda por Cedula"
@@ -43,7 +44,6 @@ function CertificadoPage() {
        
     <input   type="submit" value="Buscar"/>
 </form>
-     
       <CertificadoList>
         {
           teachers.map(item =>
@@ -53,6 +53,10 @@ function CertificadoPage() {
           )
         }
       </CertificadoList>
+      </div>
+
+
+     
     </div>
   );
 

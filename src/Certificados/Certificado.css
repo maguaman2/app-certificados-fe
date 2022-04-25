@@ -11,15 +11,19 @@ table {
     margin-top: 50px;
     text-align: center;
     margin-left: 60px;
+    border: 1px solid #000;
+    margin-bottom: 50px;
 }
 td {
-    border-bottom: 1px solid #ddd;    
+     
     padding: 8px;
     padding-top: 20px;
-  
+    border: 1px solid #000;
+    margin-bottom: 50px;
 }
 tr{
     background-color: #f2f2f2;
+    margin-bottom: 50px;
     
 }
 
@@ -31,6 +35,8 @@ th {
     text-align: left;
     background-color: #00A4AF;
     color: white;
+    margin-bottom: 50px;
+   
   
 
 }
@@ -106,10 +112,12 @@ th {
 h2{
     text-align: center;
     margin-top: 50px;
-    color: #00AFB5;
+    color: #00A4AF;
 }
 .busqueda{
     margin-top: 50px;
+    text-align: center;
+    
 }
 .input{
     margin-left: 100px;
@@ -126,4 +134,15 @@ h2{
 }
 .th{
     background-color: #00A4AF;
+}
+.fnd{
+    background: #ebebeb;
+    border: #ebebeb;
+    margin-left: 45px;
+    margin-right: 650px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.margin{
+    margin-top: 50px;
 }

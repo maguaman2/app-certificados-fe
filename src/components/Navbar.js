@@ -4,10 +4,13 @@ export default function Navbar() {
 
     return (
 
+    <div>
+
 <nav  class="navbar navbar-expand-lg navbar-light bg-light, li">
   <div class="container-fluid">
   <a class="navbar-brand" href="/certificados">
       <img src="suda.png"  height="60px"></img>
+
     </a>
    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +42,23 @@ export default function Navbar() {
      
     </div>
   </div>
+
   
 </nav>
+
+<div>
+<div>
+ <img className='img2' src="certificacion.png" height="710x" ></img>
+
+ </div>
+
+</div>
+    </div>
+
+
+
+    
+
 
 
 

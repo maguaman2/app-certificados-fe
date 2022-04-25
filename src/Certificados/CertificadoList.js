@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CertificadoList(props){
 return(
-  <div className="fndo">
+  <div class="table table-bordered">
   
   
     <div className="centrar">
@@ -13,7 +13,7 @@ return(
     <thead >
       <tr >
         <th className="th" >Id</th>
-        <th className="th">Cedula</th>
+        <th className="th">Cédula</th>
         <th className="th">Nombres</th>
         <th className="th">Curso</th>
         <th className="th">Detalle</th>
