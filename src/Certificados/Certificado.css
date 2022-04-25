@@ -29,8 +29,9 @@ th {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
-    background-color: #00796B;
+    background-color: #00A4AF;
     color: white;
+  
 
 }
     
@@ -120,5 +121,9 @@ h2{
     margin-top: 20px;
 }
 .centrar{
+    background: CDCCCC;
     text-align: -webkit-center;
+}
+.th{
+    background-color: #00A4AF;
 }

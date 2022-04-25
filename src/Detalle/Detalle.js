@@ -21,7 +21,7 @@ return(
         <div class="list-group">
           
 
-  <a style={{backgroundColor:'#6c757d'}}  class="list-group-item list-group-item-action active" aria-current="true">
+  <a style={{backgroundColor:'#676766'}}  class="list-group-item list-group-item-action active" aria-current="true">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">Certificado de {certificado.curso}  </h5>
       
@@ -32,7 +32,9 @@ return(
          
   <a class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Cédula</h5>
+      <h5 class="mb-1">Cédula
+      
+      </h5>
       
     </div>
     <p> {certificado.cedula} </p> 

@@ -18,18 +18,30 @@ export default function Navbar() {
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/certificados">Certificados</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/subircertificado">Subir Certificados</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/certificadopageupdate">Editar Certificado</a>
-        </li>
-       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Administrador
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/subircertificado">Subir Certificado</a></li>
+            <li><hr class="dropdown-divider"></hr></li>
+            <li><a class="dropdown-item" href="/certificadopageupdate">Editar Certificado</a></li>
+            <li><hr class="dropdown-divider"></hr></li>
+           
+          </ul>
+        </li>     
+  
+
+
+
       </ul>
+
      
     </div>
   </div>
+  
 </nav>
+
 
 
 
