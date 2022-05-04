@@ -30,6 +30,8 @@ export default function Navbar() {
             <li><hr class="dropdown-divider"></hr></li>
             <li><a class="dropdown-item" href="/certificadopageupdate">Editar Certificado</a></li>
             <li><hr class="dropdown-divider"></hr></li>
+            <li><a class="dropdown-item" href="/login">Login</a></li>
+            <li><hr class="dropdown-divider"></hr></li>
            
           </ul>
         </li>     

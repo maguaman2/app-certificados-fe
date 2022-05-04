@@ -28,7 +28,7 @@ function CertificadoPage() {
 
   return (
     <div  style={{ marginLeft: "center" }}>
-      <h2 >CERTIFICADOS</h2>
+      <h2 className="animista">CERTIFICADOS</h2>
       <div className="fnd">
 
        <form  style={{ marginLeft: "70px" }} onSubmit={onSubmit}  className="busqueda">

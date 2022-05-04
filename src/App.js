@@ -7,6 +7,7 @@ import Detalle from './Detalle/Detalle';
 import SubirCertificado from "./Certificados/SubirCertificado";
 import CertificadoPageUpdate from "./update/CertificadoPageUpdate";
 import CertificadoUpdate from "./update/CertificadoUpdate";
+import Login from './Login/Login';
 function App () {
 
   return (
@@ -19,6 +20,7 @@ function App () {
       <Route path="/certificadoupdate/:certificadoId" element={<CertificadoUpdate />} />
      <Route path="/subircertificado" element={<SubirCertificado/>}/>
      <Route path="/certificadopageupdate" element={<CertificadoPageUpdate/>}/>
+     <Route path="/login" element={<Login/>}></Route>
       </Routes>
     </BrowserRouter>   
   );
