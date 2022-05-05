@@ -23,7 +23,15 @@ function CertificadoUpdate() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    updateCertificado(certificado);
+    const cokieActual=document.cookie;
+    console.log(cokieActual);
+    updateCertificado(certificado,cokieActual)
+      .then(data =>        
+       
+        console.log(data)
+      
+      );
+
   }
   const onChange = (event) =>{
     if(event.target.name==='cedula')

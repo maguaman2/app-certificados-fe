@@ -8,7 +8,7 @@ const getListCertificados = async () => {
 }
 // Obtener solo un id
 const searchCertificado = async (cedula) => {
-    const response = await fetch(`${urlCrud}/certificado/${cedula}`);  
+    const response = await fetch(`${urlCrud}/certificado/cedula/${cedula}`);  
     const data = await response.json();     
     return  data;
 }
@@ -32,12 +32,14 @@ const createCertificado = async (certificado) => {
 }
 
 
-const updateCertificado = async (certificado) => {
-  
+const updateCertificado = async (certificado,token) => {    
     const resp = await fetch(`${urlCrud}/certificado`, {
         method: 'PUT',
         body: JSON.stringify(certificado),
+        mode: 'no-cors',
         headers: {
+            'Access-Control-Allow-Origin':'*',
+            'authorization': token.replace('token=','Bearer '),
             'Content-type': 'application/json'
         }
     });

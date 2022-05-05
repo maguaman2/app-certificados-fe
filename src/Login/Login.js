@@ -1,7 +1,31 @@
 
 import './Login.css'
+import React, { useState } from "react";
+import { loginAdmin } from '../service/LoginService'
 
 function Login(props){
+    const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  
+
+    const onSubmit = (event) => {
+        event.preventDefault();        
+        loginAdmin({username,password}).then(data =>{
+            document.cookie = `token=${data.jwt};max-age=${60*60*3}; path=/; samesite=strict`
+            console.log(document.cookie)
+            }
+            )
+    
+      }
+    
+      const onChange = (event) =>{
+        if(event.target.name==='username')    
+        setUsername(event.target.value)
+        
+        if(event.target.name==='password')
+        setPassword(event.target.value)
+    
+      }
   return(
 
   <div class="container">
@@ -18,14 +42,21 @@ function Login(props){
 
           <div class="col-lg-12 login-form">
               <div class="col-lg-12 login-form">
-                  <form>
+                  <form onSubmit={onSubmit}>
                       <div class="form-group">
                           <label class="form-control-label">Usuario</label>
-                          <input type="text" class="form-control"></input>
+                          <input type="text" class="form-control"
+                        name="username"
+                        value={username}
+                        onChange={onChange}></input>
                       </div>
                       <div class="form-group">
                           <label class="form-control-label">Contraseña</label>
-                          <input type="password" class="form-control" i></input>
+                          <input type="password" class="form-control" i
+                           name="password"
+                           value={password}
+                           onChange={onChange}
+                          ></input>
                       </div>
 
                       <div class="col-lg-12 loginbttm">
