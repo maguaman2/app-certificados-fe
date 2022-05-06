@@ -36,7 +36,7 @@ const updateCertificado = async (certificado,token) => {
     const resp = await fetch(`${urlCrud}/certificado`, {
         method: 'PUT',
         body: JSON.stringify(certificado),
-        mode: 'no-cors',
+        
         headers: {
             'Access-Control-Allow-Origin':'*',
             'authorization': token.replace('token=','Bearer '),
