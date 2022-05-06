@@ -1,10 +1,13 @@
+import { findAllByDisplayValue } from "@testing-library/react";
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { updateCertificado,getCertificadoById } from '../service/CertificadoService'
 import './Certificado.css'
 
 function CertificadoUpdate() {
-  
+
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const { certificadoId } = useParams();
   const [certificado,setCertificado] = useState({
     cedula:'',
@@ -23,14 +26,14 @@ function CertificadoUpdate() {
 
   const onSubmit = (event) => {
     event.preventDefault();
+    setLoading(true);
     const cokieActual=document.cookie;
     console.log(cokieActual);
     updateCertificado(certificado,cokieActual)
-      .then(data =>        
-       
-        console.log(data)
-      
-      );
+      .then(data => {       
+        setLoading(false)
+        navigate(`/certificadoupdate/${certificadoId}`)      
+      });
 
   }
   const onChange = (event) =>{
@@ -159,11 +162,15 @@ function CertificadoUpdate() {
             onChange={onChange}
           />
 
-
+{loading && (
+						<p>
+							Guardando
+						</p>
+					)}
         
 
         <button type="submit" class="btn btn-success" className="formUpdateBtn">Guardar</button>
-
+    
       </form>
       
     </div>

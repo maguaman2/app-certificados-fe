@@ -32,7 +32,8 @@ const createCertificado = async (certificado) => {
 }
 
 
-const updateCertificado = async (certificado,token) => {    
+const updateCertificado = async (certificado,token) => {  
+    console.log('Guardando ...')  
     const resp = await fetch(`${urlCrud}/certificado`, {
         method: 'PUT',
         body: JSON.stringify(certificado),
