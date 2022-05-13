@@ -24,9 +24,7 @@ function App () {
      <Route path="/certificadopageupdate" element={<CertificadoPageUpdate/>}/>
      <Route path="/login" element={<Login/>}></Route>
       </Routes>
-      <Footer>
-
-      </Footer>
+      <Footer />
     </BrowserRouter>   
   );
 }
