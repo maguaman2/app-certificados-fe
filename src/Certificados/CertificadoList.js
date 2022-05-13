@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CertificadoList(props){
 return(
-  <div class="table table-bordered">
+  <div className="table table-bordered">
   
   
     <div className="centrar">
