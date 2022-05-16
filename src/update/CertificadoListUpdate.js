@@ -24,6 +24,7 @@ return(
     
         </tbody>
   </table>
+  
   </div>
 );
 }

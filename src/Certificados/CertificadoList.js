@@ -1,4 +1,5 @@
 
+
 function CertificadoList(props){
 return(
   <div className="table table-bordered">
@@ -24,6 +25,7 @@ return(
         </tbody>
   </table>
     </div>
+ 
   </div>
 );
 }

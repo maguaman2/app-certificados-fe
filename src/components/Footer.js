@@ -8,7 +8,7 @@ import telefono from './imgs/telefono.png';
 import tiktok from './imgs/tiktok.png';
 import twitter from './imgs/twitter.png';
 import youtube from './imgs/youtube.png';
-
+import './Footer.css'
 
 function Footer() {
   // Import result is the URL of your image
@@ -21,11 +21,11 @@ function Footer() {
             INFORMACIÓN
           </b>
           <p></p>
-          <img className="icon" src={telefono} alt='telefono' height="60px" />
+          <img className="icon" src={telefono} alt='telefono' height="60px" />(593-7) 283 8323 / 284 3619
           <p></p>
-          <img className="icon" src={correo} alt='correo' height="60px" />
+          <img className="icon" src={correo} alt='correo' height="60px" />relpublicaits@sudamericano.edu.ec
           <p></p>
-          <img className="icon" src={marcador} alt='marcador' height="60px" />
+          <img className="icon" src={marcador} alt='marcador' height="60px" />Simón Bolívar y Manuel Vega Esq. Cuenca EC
 
         </div>
         <div className="comvi">
