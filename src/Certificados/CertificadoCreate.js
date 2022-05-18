@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createTeacher } from '../service/CertificadoService'
+import { createCertificado } from '../service/CertificadoService'
 
 function TeacherCreate() {
 
@@ -16,7 +16,10 @@ function TeacherCreate() {
       sexo: "Mas",
       estado_civil: "Soltero",
     }
-    createTeacher(objeto)
+
+    const cokieActual=document.cookie;
+    console.log(cokieActual);
+    createCertificado(objeto,cokieActual);
 
   }
 

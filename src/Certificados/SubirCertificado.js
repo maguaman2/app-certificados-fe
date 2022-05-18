@@ -25,9 +25,9 @@ function SubirCertificado() {
     });
 
     setArray(array);
-   
+   const cokieActual=document.cookie
    array.map((item) => (
-  createCertificado(item)
+  createCertificado(item,cokieActual)
   
     ))
   };
@@ -63,7 +63,7 @@ function SubirCertificado() {
             handleOnSubmit(e);
           }}
         >
-          IMPORTAR
+          Importar datos
         </button>
       </form>
 

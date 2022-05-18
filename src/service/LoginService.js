@@ -1,4 +1,4 @@
-const urlCrud = 'http://localhost:8081';
+const urlCrud = 'http://190.94.134.20:8081';
 
 const loginAdmin = async (user) => {
    
