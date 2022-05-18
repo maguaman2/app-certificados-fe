@@ -41,28 +41,28 @@ function Login(props) {
         <div className="container">
 
             <div className="row">
-                <div class="col-lg-3 col-md-2"></div>
-                <div class="col-lg-6 col-md-8 login-box">
-                    <div classname="col-lg-12 login-key">
-                        <i classname="fa fa-key" aria-hidden="true"></i>
+                <div className="col-lg-3 col-md-2"></div>
+                <div className="col-lg-6 col-md-8 login-box">
+                    <div className="col-lg-12 login-key">
+                        <i className="fa fa-key" aria-hidden="true"></i>
                     </div>
-                    <div class="col-lg-12 login-title">
+                    <div className="col-lg-12 login-title">
                         ADMINISTRADOR
                     </div>
 
-                    <div classname="col-lg-12 login-form">
-                        <div classname="col-lg-12 login-form">
+                    <div className="col-lg-12 login-form">
+                        <div className="col-lg-12 login-form">
                             <form onSubmit={onSubmit}>
-                                <div classname="form-group">
-                                    <label class="form-control-label">Usuario</label>
-                                    <input type="text" class="form-control"
+                                <div className="form-group">
+                                    <label className="form-control-label">Usuario</label>
+                                    <input type="text" className="form-control"
                                         name="username"
                                         value={username}
                                         onChange={onChange}></input>
                                 </div>
-                                <div classname="form-group">
-                                    <label class="form-control-label">Contraseña</label>
-                                    <input type="password" class="form-control"
+                                <div className="form-group">
+                                    <label className="form-control-label">Contraseña</label>
+                                    <input type="password" className="form-control"
 
                                         name="password"
                                         value={password}
@@ -70,12 +70,12 @@ function Login(props) {
                                     ></input>
                                 </div>
 
-                                <div classname="col-lg-12 loginbttm">
-                                    <div class="col-lg-6 login-btm login-text">
+                                <div className="col-lg-12 loginbttm">
+                                    <div className="col-lg-6 login-btm login-text">
                                         Bienvenido
                                     </div>
-                                    <div classname="col-lg-6 login-btm login-button">
-                                        <button type="submit" class="btn btn-outline-primary">INICIAR</button>
+                                    <div className="col-lg-6 login-btm login-button">
+                                        <button type="submit" className="btn btn-outline-primary">INICIAR</button>
                                     </div>
                                 </div>
                                 {error && (
@@ -86,7 +86,7 @@ function Login(props) {
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-2"></div>
+                    
                 </div>
             </div>
         </div>

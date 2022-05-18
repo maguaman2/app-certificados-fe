@@ -1,4 +1,3 @@
-import { findAllByDisplayValue } from "@testing-library/react";
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { updateCertificado,getCertificadoById } from '../service/CertificadoService'
@@ -169,7 +168,7 @@ function CertificadoUpdate() {
 					)}
         
 
-        <button type="submit" class="btn btn-success" className="formUpdateBtn">Guardar</button>
+        <button type="submit" className="btn btn-success" className="formUpdateBtn">Guardar</button>
     
       </form>
       

@@ -48,7 +48,7 @@ function SubirCertificado() {
   const headerKeys = Object.keys(Object.assign({}, ...array));
 
   return (
-    <div style={{ textAlign: "center" }} class="subir">
+    <div style={{ textAlign: "center" }} className="subir">
       <h1>Subir Certificados </h1>
       <form>
         <input

@@ -30,21 +30,21 @@ return(
 
   <div>
 
-        <div class="list-group">
+        <div className="list-group">
           
 
-  <a style={{backgroundColor:'#676766'}}  class="list-group-item list-group-item-action active" aria-current="true">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Certificado de {certificado.curso}  </h5>
+  <a style={{backgroundColor:'#676766'}}  className="list-group-item list-group-item-action active" aria-current="true">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Certificado de {certificado.curso}  </h5>
       
     </div>
    
    
   </a>
          
-  <a class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Cédula
+  <a className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Cédula
       
       </h5>
       
@@ -52,78 +52,78 @@ return(
     <p> {certificado.cedula} </p> 
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Nombres</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Nombres</h5>
     </div>
       <p> {certificado.nombres} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Email</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Email</h5>
     </div>
       <p> {certificado.email} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Fechas</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Fechas</h5>
     </div>
       <p> {certificado.fechas} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Rol</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Rol</h5>
     </div>
       <p> {certificado.rol} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Capacitador</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Capacitador</h5>
     </div>
       <p> {certificado.capacitador} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Código </h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Código </h5>
     </div>
       <p> {certificado.codigo} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Área </h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Área </h5>
     </div>
       <p> {certificado.area} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Curso</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Curso</h5>
     </div>
       <p> {certificado.curso} </p>
     
   </a>
-  <a class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">objetivo</h5>
+  <a className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">objetivo</h5>
     </div>
       <p> {certificado.objetivo} </p>
     
   </a>
-  <a  class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Contenidos</h5>
+  <a  className="list-group-item list-group-item-action">
+    <div className="d-flex w-100 justify-content-between">
+      <h5 className="mb-1">Contenidos</h5>
     </div>
       <p> {certificado.contenidos} </p>
     
   </a>
         <Link to={`/certificados/`}>
-        <button style={{backgroundColor:'#6c757d'}} type="button" class="btn btn-primary">Regresar</button>
+        <button style={{backgroundColor:'#6c757d'}} type="button" className="btn btn-primary">Regresar</button>
 
         </Link>
         </div>
@@ -138,7 +138,7 @@ return(
           <img className="icon" src={telefono} alt='telefono' height="60px" />(593-7) 283 8323 / 284 3619
           <p></p>
           <img className="icon" src={correo} alt='correo' height="60px" />relpublicaits@sudamericano.edu.ec
-          <p></p>
+          <p></p>class
           <img className="icon" src={marcador} alt='marcador' height="60px" />Simón Bolívar y Manuel Vega Esq. Cuenca EC
 
         </div>

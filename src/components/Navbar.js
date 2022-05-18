@@ -8,7 +8,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light, li">
         <div className="container-fluid">
           <a className="navbar-brand" href="/certificados">
-            <img src="suda.png" height="60px"></img>
+            <img src="suda.png" height="60px" alt="sud"/>
 
           </a>
 
@@ -41,16 +41,13 @@ export default function Navbar() {
           </div>
         </div>
 
+     
 
       </nav>
 
-      <div>
-        <div>
-          <img className='img2' src="certificacion.png" height="710x" ></img>
+   
 
-        </div>
-
-      </div>
+  
     </div>
 
 

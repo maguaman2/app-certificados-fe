@@ -9,7 +9,6 @@ import CertificadoPageUpdate from "./update/CertificadoPageUpdate";
 import CertificadoUpdate from "./update/CertificadoUpdate";
 import Login from './Login/Login';
 
-import Footer from "./components/Footer";
 function App () {
 
   return (

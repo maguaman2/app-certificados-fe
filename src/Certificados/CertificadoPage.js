@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import CertificadoList from './CertificadoList';
 import Certificado from './Certificado'
-import { getListCertificados,searchCertificado } from '../service/CertificadoService'
+import { searchCertificado } from '../service/CertificadoService'
 //import axios from "axios";
 import correo from './imgs/correo.png'; // Tell webpack this JS file uses this image
 import facebook from './imgs/facebook.png';
