@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { updateCertificado,getCertificadoById } from '../service/CertificadoService'
-import './Certificado.css'
+import './CertificadoUpdate.css'
 
 function CertificadoUpdate() {
 
