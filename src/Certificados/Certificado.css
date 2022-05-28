@@ -1,13 +1,18 @@
 .search{
     width: 100%;
-    height: 100vh;
     display: grid;
+    height: 70vh;
     place-items: center;
 }
 .search-container{
     display: grid;
     grid-template-rows: auto 1fr auto;
     /*width: 350px;*/
+}
+.results-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 650px;
 }
 .tittle{
     font-size:18px;
@@ -53,3 +58,113 @@
     margin-bottom: 30px;
   }
 
+  .certificado{
+      display: grid;
+      place-items: center;
+  }
+  .certificado-container{
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 650px;
+  }
+  .certificado-item{
+    background-color:rgb(248, 248, 248);
+    align-items: center;  
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-bottom: 15px;
+  }
+
+  .certificado-item p:nth-child(1){
+      display: flex;
+      flex-direction: column;
+  }
+
+  .certificado-item p span:nth-child(1){
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.certificado-item p span:nth-child(2){
+    font-size: 18px;
+    color: #c7c7c7;
+}
+.link{
+    text-decoration: none;
+    
+
+}
+
+/*DETALE CERTIFICADO*/
+
+.detalle{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 650px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #00A4AF;
+   
+}
+.titulo{
+    
+    background-color: #00A4AF;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo p{
+    color: ghostwhite;
+    font-size: 20px;
+    font-weight: bold;
+}
+.curso{
+    margin: 20px 10px 10px 10px;
+    border-radius: 8px;
+    background-color: gainsboro;
+    
+
+}
+.nombre-curso{
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 10px;
+
+}
+
+
+.datos-personales{
+    margin-left: 20px;    
+    
+    box-shadow: 0 4px 6px -6px rgb(156, 155, 155);
+}
+
+.datos-curso{
+    margin-left: 20px;
+    box-shadow: 0 4px 6px -6px rgb(156, 155, 155);
+}
+
+.contenido-curso{
+    margin-left: 20px;
+
+}
+.row-dato{
+ 
+    font-size: 18px;
+}
+.row-dato span:nth-child(1){
+    font-weight: bold;
+
+}
+.row-dato span:nth-child(2){
+  font-style: italic;
+  margin-left: 15px;
+ 
+}

@@ -1,6 +1,6 @@
 function CertificadoListUpdate(props){
 return(
-  <div className="centrar">
+  <div>
 
     <table>
     <thead >

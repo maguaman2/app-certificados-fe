@@ -1,20 +1,19 @@
-const urlCrud = 'http://190.94.134.20:8081';
-
+import {URL_API} from '../constants/urlApi'
 
 const getListCertificados = async () => {
-    const response = await fetch(`${urlCrud}/certificado`);  
+    const response = await fetch(`${URL_API}/certificado`);  
     const data = await response.json();     
     return  data;
 }
 // Obtener solo un id
 const searchCertificado = async (cedula) => {
-    const response = await fetch(`${urlCrud}/certificado/cedula/${cedula}`);  
+    const response = await fetch(`${URL_API}/certificado/cedula/${cedula}`);  
     const data = await response.json();     
     return  data;
 }
 
 const getCertificadoById = async (id) => {
-    const response = await fetch(`${urlCrud}/certificado/id/${id}`);  
+    const response = await fetch(`${URL_API}/certificado/id/${id}`);  
     const data = await response.json();     
     return  data;
 }
@@ -22,7 +21,7 @@ const getCertificadoById = async (id) => {
 const createCertificado = async (certificado,token) => {
     console.log(certificado);
     console.log(token);
-	const resp = await fetch(`${urlCrud}/certificado/`, {
+	const resp = await fetch(`${URL_API}/certificado/`, {
         method: 'POST',
         body: JSON.stringify(certificado),
         headers: {
@@ -37,7 +36,7 @@ const createCertificado = async (certificado,token) => {
 
 const updateCertificado = async (certificado,token) => {  
     console.log('Guardando ...')  
-    const resp = await fetch(`${urlCrud}/certificado`, {
+    const resp = await fetch(`${URL_API}/certificado`, {
         method: 'PUT',
         body: JSON.stringify(certificado),
         

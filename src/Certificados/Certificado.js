@@ -2,30 +2,36 @@
 import './Certificado.css'
 import { Link } from "react-router-dom";
 
-import './Footer.css'
 
 
-function Certificado(props){
-   
-return(
-    
-   
+function Certificado({ itemCertificado }) {
 
-        <tr  > 
-            
-            <td>{props.itemTeacher.id}</td>   
-            <td> {props.itemTeacher.cedula} </td>     
-            <td> {props.itemTeacher.nombres} </td>
-            <td> {props.itemTeacher.curso} </td>
-            <td><Link to={`/detalle/${props.itemTeacher.id}`}>Detalle</Link> </td>
-            
-        </tr>
-        
-   
- 
-      
-);
+    return (
+        <div className="certificado">
+            <div className="certificado-container">
+                <div className="certificado-item">
+                <Link to={`/detalle/${itemCertificado.id}`} className="link">
+                    <p>
+                        <span>{itemCertificado.curso} </span>
+                        <span>{itemCertificado.nombres} </span>
+                    </p>
+                    </Link>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    );
 
 }
 export default Certificado
-  

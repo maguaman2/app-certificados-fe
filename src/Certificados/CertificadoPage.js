@@ -6,14 +6,14 @@ import { searchCertificado } from '../service/CertificadoService'
 import './Certificado.css'
 
 function CertificadoPage() {
-  const [teachers, setTeachers] = useState([]);
+  const [certificados, setCertificados] = useState([]);
   const [cedula, setCedula] = useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
     searchCertificado(cedula).then(data => {
       console.log(data);
-      setTeachers(data);
+      setCertificados(data);
     });
   }
 
@@ -42,15 +42,20 @@ function CertificadoPage() {
             />
             <input type="submit" value="Buscar" className="primary-button search-button" />
           </form>
-          {teachers.length !== 0 && <CertificadoList>
+          </div>
+     
+        <div className="results-container">
+        {certificados.length !== 0 ? <CertificadoList cedula={cedula}>
             {
-              teachers.map(item =>
+              certificados.map(item =>
                 <Certificado
                   key={item.id}
-                  itemTeacher={item} />
+                  itemCertificado={item} />
               )
             }
-          </CertificadoList>}
+          </CertificadoList>
+            : <p>Busqueda sin resultados</p>
+          }
 
         </div>
       </div>

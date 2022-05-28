@@ -56,12 +56,14 @@ function SubirCertificado() {
           id={"csvFileInput"}
           accept={".csv"}
           onChange={handleOnChange}
+          style={{marginBottom:'20px'}}
         />
 
         <button
           onClick={(e) => {
             handleOnSubmit(e);
           }}
+          className="primary-button"
         >
           Importar datos
         </button>

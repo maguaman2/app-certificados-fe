@@ -1,8 +1,8 @@
-const urlCrud = 'http://190.94.134.20:8081';
+import {URL_API} from '../constants/urlApi'
 
 const loginAdmin = async (user) => {
    
-    const resp = await fetch(`${urlCrud}/login/auth`, {
+    const resp = await fetch(`${URL_API}/login/auth`, {
         method: 'POST',
         body: JSON.stringify(user),
         headers: {

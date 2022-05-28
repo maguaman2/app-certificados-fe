@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import CertificadoView from './CertificadoView'
 import { searchCertificado } from '../service/CertificadoService'
 import CertificadoListUpdate from "./CertificadoListUpdate";
@@ -28,11 +28,16 @@ function CertificadoPageUpdate() {
 
   return (
     <div className="search">
-      <div className="search-container">
-        <h2 className="tittle">EDITAR CERTIFICADOS</h2> 
-        <p className="subtittle">Busqueda de certificados por cedula de identidad</p>      
-          <form onSubmit={onSubmit} className="search-form">
       
+      <div className="search-container">
+        <h2 className="tittle">ADMINISTRAR CERTIFICADOS</h2> 
+        <Link to={`/subircertificado`} className="primary-button">
+          <button className="primary-button">Subir certificados</button>
+        </Link>
+        
+        <p>-------------O-----------</p>
+        <p className="subtittle">Busqueda de certificados por cedula de identidad</p>      
+          <form onSubmit={onSubmit} className="search-form">      
             <input
               id="input"
               placeholder="Cedula"
@@ -44,7 +49,7 @@ function CertificadoPageUpdate() {
             />
             <input type="submit" value="Buscar" className="primary-button search-button"/>
           </form>
-          {certificados.length !==0 &&     <CertificadoListUpdate>
+          {certificados.length !==0 && <CertificadoListUpdate>
             {
               certificados.map(item =>
                 <CertificadoView

@@ -1,33 +1,11 @@
 
-
-function CertificadoList(props){
-return(
-  <div className="table table-bordered">
-  
-  
-    <div className="centrar">
-
-
-    <table  >
-    <thead >
-      <tr >
-        <th className="th" >Id</th>
-        <th className="th">Cédula</th>
-        <th className="th">Nombres</th>
-        <th className="th">Curso</th>
-        <th className="th">Detalle</th>
-      </tr>
-    </thead>
-    <tbody>
-    
+function CertificadoList(props) {
+  return (
+    <div>
+      <p>Resultado para la cedula: {props.cedula}</p>
         {props.children}
-    
-        </tbody>
-  </table>
-    </div>
- 
-  </div>
-);
+        </div>
+  );
 }
 
 export default CertificadoList
