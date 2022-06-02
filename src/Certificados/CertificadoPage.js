@@ -28,12 +28,12 @@ function CertificadoPage() {
       <div className="search">
         <div className="search-container">
           <h2 className="tittle">CERTIFICADOS</h2>
-          <p className="subtittle">Busqueda de certificados por cedula de identidad</p>
+          <p className="subtittle">Búsqueda de certificados por cédula de identidad</p>
           <form onSubmit={onSubmit} className="search-form">
 
             <input
               id="input"
-              placeholder="Cedula"
+              placeholder="Cédula"
               type="text"
               name="cedula"
               value={cedula}
@@ -54,7 +54,7 @@ function CertificadoPage() {
               )
             }
           </CertificadoList>
-            : <p>Busqueda sin resultados</p>
+            : <p>Búsqueda sin resultados</p>
           }
 
         </div>

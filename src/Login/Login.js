@@ -41,7 +41,7 @@ function Login(props) {
   
             <div className="login">
                 <div className="login-container">
-                    <h2 className="tittle">Inicio de sesion administrador</h2>
+                    <h2 className="tittle">Inicio de sesión administrador</h2>
                     <p className="subtittle">Ingrese usuario y contrasena</p>
                     <form onSubmit={onSubmit} className="login-form">
 

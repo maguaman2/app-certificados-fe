@@ -1,6 +1,6 @@
 .footer{
     background: #cdcccc;
-    height: 150px;
+    height: 175px;
     position: relative;
 }
 .pie{
@@ -23,9 +23,17 @@
 .icon{
     height: 25px;
     width: 25px;
+  
+}
+.icon-info{
+    margin-right: 10px;
+}
+.icon-comuni{
+    padding: 9px;
 }
 .comvi{
-    width: 200px;
+    text-align: center;
+    width: 250px;
     height: 150px;
     position: absolute;
     top: 1px;

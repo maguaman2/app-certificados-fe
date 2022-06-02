@@ -72,7 +72,7 @@ function CertificadoUpdate() {
       <form onSubmit={onSubmit} className="boxFormUpdate">
         <h2>Actualizar Certificado</h2>
         <div className="datos-personales">
-          <label>Cedula</label>
+          <label>Cédula</label>
           <input
             className="formUpdateInput"
             name="cedula"
@@ -134,7 +134,7 @@ function CertificadoUpdate() {
             value={certificado.capacitador}
             onChange={onChange}
           />
-          <label>Codigo</label>
+          <label>Código</label>
           <input
             className="formUpdateInput"
             placeholder="Codigo"
@@ -142,7 +142,7 @@ function CertificadoUpdate() {
             value={certificado.codigo}
             onChange={onChange}
           />
-          <label>Area</label>
+          <label>Área</label>
           <input
             className="formUpdateInput"
             placeholder="Area"

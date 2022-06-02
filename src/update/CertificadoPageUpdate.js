@@ -36,7 +36,7 @@ function CertificadoPageUpdate() {
         </Link>
         
         <p>-------------O-----------</p>
-        <p className="subtittle">Busqueda de certificados por cedula de identidad</p>      
+        <p className="subtittle">Búsqueda de certificados por cédula de identidad</p>      
           <form onSubmit={onSubmit} className="search-form">      
             <input
               id="input"

@@ -6,7 +6,7 @@ return(
     <thead >
       <tr>
         <th >Id</th>
-        <th>Cedula</th>
+        <th>Cédula</th>
         <th>Nombres</th>
         <th>Curso</th>
         <th>Editar</th>
