@@ -40,8 +40,8 @@ function CertificadoUpdate() {
       setCertificado({ ...certificado, cedula: event.target.value })
     if (event.target.name === 'nombres')
       setCertificado({ ...certificado, nombres: event.target.value })
-    if (event.target.name === 'email')
-      setCertificado({ ...certificado, email: event.target.value })
+    if (event.target.name === 'link')
+      setCertificado({ ...certificado, link: event.target.value })
     if (event.target.name === 'fechas')
       setCertificado({ ...certificado, fechas: event.target.value })
     if (event.target.name === 'rol')
@@ -92,9 +92,9 @@ function CertificadoUpdate() {
           <label>Email</label>
           <input
             className="formUpdateInput"
-            placeholder="Email"
-            name="email"
-            value={certificado.email}
+            placeholder="Link"
+            name="link"
+            value={certificado.link}
             onChange={onChange}
           />
           <label>Rol</label>
@@ -168,6 +168,15 @@ function CertificadoUpdate() {
             value={certificado.contenidos}
             onChange={onChange}
           />
+          <label>Horas</label>
+          <input
+            className="formUpdateInput"
+            placeholder="Horas"
+            name="horas"
+            value={certificado.horas}
+            onChange={onChange}
+          />
+
         </div>
         {loading && (
           <p>

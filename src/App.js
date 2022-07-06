@@ -3,11 +3,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import CertificadoPage from './Certificados/CertificadoPage';
 import Navbar from "./components/Navbar";
+import Loading from "./components/Loading";
 import CertificadoDetalle from './Certificados/CertificadoDetalle';
 import SubirCertificado from "./Certificados/SubirCertificado";
 import CertificadoPageUpdate from "./update/CertificadoPageUpdate";
 import CertificadoUpdate from "./update/CertificadoUpdate";
 import Login from './Login/Login';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App () {
 

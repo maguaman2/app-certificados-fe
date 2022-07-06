@@ -2,13 +2,15 @@ import './Certificado.css'
 import { getCertificadoById } from '../service/CertificadoService'
 
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { MainContext } from "../context/MainContext";
+
 
 function CertificadoDetalle(props) {
 
   const [certificado, setCertificado] = useState({});
-  const { certificadoId } = useParams();
+  const { certificadoId} = React.useContext(MainContext);
+
   useEffect(() => {
     getCertificadoById(certificadoId).then(data => {
       setCertificado(data);
@@ -29,7 +31,9 @@ function CertificadoDetalle(props) {
         <div className="datos-personales">
           <p className="row-dato"> <span>Cédula: </span> <span>{certificado.cedula}</span> </p>
           <p className="row-dato"> <span>Nombre: </span> <span>{certificado.nombres}</span> </p>
-          <p className="row-dato"> <span>Correo electrónico: </span><span>{certificado.email} </span></p>
+         {certificado.link && 
+          <p className="row-dato"> <span>Link: </span><span>{certificado.link} </span></p>
+         }
           <p className="row-dato"> <span>Participación como: </span><span>{certificado.rol} </span></p>
         </div>
         <div className="datos-curso">
@@ -41,12 +45,15 @@ function CertificadoDetalle(props) {
         <div className="contenido-curso">
           <p className="row-dato"> <span>Objetivo:</span><span>{certificado.objetivo}</span></p>
           <p className="row-dato"> <span>Contenido:</span><span>{certificado.contenidos} </span></p>
+          <p className="row-dato"> <span>Horas:</span><span>{certificado.horas} </span></p>
         </div>
         <Link to={`/certificados`} className="link">
                    
                         <button className="primary-button detalle-button">Regresar </button>
             
                     </Link>
+
+                    
       </div>
     </div>
   );

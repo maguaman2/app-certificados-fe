@@ -1,14 +1,20 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment,  } from "react";
 import CertificadoList from './CertificadoList';
 import Certificado from './Certificado'
 import Footer from '../components/Footer'
 import { searchCertificado } from '../service/CertificadoService'
-import './Certificado.css'
+import './Certificado.css';
+
+import { Modal } from "../components/Modal";
+import { MainContext } from "../context/MainContext";
+import CertificadoDetalle from "./CertificadoDetalle";
+
+
 
 function CertificadoPage() {
   const [certificados, setCertificados] = useState([]);
   const [cedula, setCedula] = useState("");
-
+  
   const onSubmit = (event) => {
     event.preventDefault();
     searchCertificado(cedula).then(data => {
@@ -22,6 +28,9 @@ function CertificadoPage() {
       setCedula(event.target.value)
     }
   }
+
+
+  
 
   return (
     <Fragment>
@@ -40,7 +49,7 @@ function CertificadoPage() {
               onChange={onChange}
               className="search-input"
             />
-            <input type="submit" value="Buscar" className="primary-button search-button" />
+          
           </form>
           </div>
      
@@ -56,12 +65,12 @@ function CertificadoPage() {
           </CertificadoList>
             : <p>Búsqueda sin resultados</p>
           }
-
         </div>
       </div>
       <Footer />
     </Fragment>
   );
 }
+
 
 export default CertificadoPage;
